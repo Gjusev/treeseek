@@ -65,14 +65,16 @@ def test_nav_returns_only_chosen_subtree():
     assert compared < len(X)  # the point of navigation
 
 
-def test_nav_far_query_still_returns_k():
-    # a query far from every passage still descends and returns k results
+def test_nav_far_query_still_descends():
+    # a query far from every passage still descends; a subtree smaller than k
+    # yields fewer than k results, which is inherent to subtree-only return
     X, _ = synthetic()
     _, _, nav = build_retrievers(X)
     rng = np.random.default_rng(0)
     q = normalize(rng.normal(size=(1, X.shape[1])))[0]
-    ranked, compared, _ = nav.search(q, k=4)
-    assert len(ranked) == 4
+    ranked, _, path = nav.search(q, k=4)
+    assert 1 <= len(ranked) <= 4
+    assert len(ranked) == min(4, path["subtree_size"])
 
 
 def test_metrics_definitions():
