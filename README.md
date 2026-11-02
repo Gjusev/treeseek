@@ -60,15 +60,15 @@ A concrete case: the query "Age of Reason Was: Who has read Rushdie's" (topic al
 
 ## Limitations
 
-- This is a zero-training approximation of a trained model. treeseek scores k-means centroids; DecisionRAG trains a hierarchical decision model over 2.68M paragraphs and reports gains over a dense retriever plus an 8B reranker. The two aren't comparable.
+- This is a much simpler stand-in for the paper's method. treeseek scores k-means centroids by embedding similarity. DecisionRAG uses a pretrained language model as a decision model that judges candidate branches together, with no task-specific training, and reports gains over a dense retriever plus an 8B reranker on corpora up to 2.68M paragraphs. The two aren't comparable.
 - The corpus is small (3000 passages) and its clean topic structure favors clustering. Queries are short subject lines, not natural questions, and relevance is topic-level.
 - Greedy descent can't be undone: no backtracking, no beam, no sibling expansion. One wrong centroid comparison at level 1 removes about 1/20 of the corpus, which accounts for all 8 flat-only failures above.
 - Nav returns at most k passages from one subtree. A subtree smaller than k returns fewer results.
-- Open questions: whether pruning losses grow with tree depth or corpus size, and whether a trained decision model would avoid these branch errors. What this run does show: on a small structured corpus, plain hierarchical navigation matches flat dense retrieval on top-rank topic accuracy at 1/40 of the comparison cost, and loses about 6 points of Hit@5 to irreversible pruning.
+- Open questions: whether pruning losses grow with tree depth or corpus size, and whether a language-model decision model would avoid these branch errors. What this run does show: on a small structured corpus, plain hierarchical navigation matches flat dense retrieval on top-rank topic accuracy at 1/40 of the comparison cost, and loses about 6 points of Hit@5 to irreversible pruning.
 
 ## Background
 
-treeseek is based on the navigation idea in "DecisionRAG: Retriever-Free Retrieval via Hierarchical Decision Models" (arXiv 2610.35868, Cornell and ASAPP). Branches are scored by mean member similarity of k-means centroids, not by the paper's trained hierarchical decision model. It is not a reproduction, and none of the numbers here say anything about the paper's numbers.
+treeseek is based on the navigation idea behind DecisionRAG, from "Retriever-Free Retrieval: Navigating Documents with Decision Models" (arXiv 2610.35868, Cornell University and ASAPP). Branches are scored by mean member similarity of k-means centroids, not by the paper's language-model decision model. It is not a reproduction, and none of the numbers here say anything about the paper's numbers.
 
 ## Repository layout
 
@@ -91,7 +91,8 @@ Source paper:
 
 ```bibtex
 @misc{decisionrag2026,
-  title         = {DecisionRAG: Retriever-Free Retrieval via Hierarchical Decision Models},
+  title         = {Retriever-Free Retrieval: Navigating Documents with Decision Models},
+  author        = {Wan, Chao and J{\"u}nger, Paul and Du, Beixi and Liu, Bodong and Krishnan, Navaneetha and Weinberger, Kilian Q.},
   year          = {2026},
   eprint        = {2610.35868},
   archivePrefix = {arXiv},
@@ -108,7 +109,7 @@ This repository:
   author = {Gjusev},
   year   = {2026},
   url    = {https://github.com/Gjusev/treeseek},
-  note   = {Zero-training approximation of the navigation idea in arXiv:2610.35868, not a reproduction}
+  note   = {Embedding-only approximation of the navigation idea in arXiv:2610.35868, not a reproduction}
 }
 ```
 

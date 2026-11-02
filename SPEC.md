@@ -4,7 +4,7 @@ You are developing this project autonomously. Read this spec fully, make sensibl
 
 ## What this is
 
-A minimal retrieval system that navigates a topic hierarchy from root to passage instead of scanning the whole corpus, compared against a flat dense retrieval baseline on the same corpus. It explores the idea in "DecisionRAG: Retriever-Free Retrieval via Hierarchical Decision Models" (arXiv 2610.35868, Cornell + ASAPP): https://arxiv.org/abs/2610.35868
+A minimal retrieval system that navigates a topic hierarchy from root to passage instead of scanning the whole corpus, compared against a flat dense retrieval baseline on the same corpus. It explores the idea in "Retriever-Free Retrieval: Navigating Documents with Decision Models" (method: DecisionRAG) (arXiv 2610.35868, Cornell + ASAPP): https://arxiv.org/abs/2610.35868
 
 Key numbers from that paper, for context only: their trained decision model beats a dense retriever plus an 8B reranker by 13.8 Recall@1 on MultiDoc2Dual and 17.4 Hit@1 on Natural Questions over 2.68M paragraphs, at 0.2 to 2.3 cents per query, with no task-specific training.
 
