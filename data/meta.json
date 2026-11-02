@@ -1,0 +1,15 @@
+{
+  "encoder": "minilm",
+  "encoder_label": "sentence-transformers/all-MiniLM-L6-v2",
+  "n_passages": 3000,
+  "n_queries": 80,
+  "n_l1_clusters": 20,
+  "n_l2_clusters": 61,
+  "subtree_size_mean": 49.18032786885246,
+  "tree_params": {
+    "n_top": 20,
+    "leaf_max": 60,
+    "seed": 13
+  },
+  "build_seconds": 66.4
+}

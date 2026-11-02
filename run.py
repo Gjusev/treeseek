@@ -13,6 +13,11 @@ from pathlib import Path
 
 import numpy as np
 
+try:  # Windows: torch DLLs must initialize before scipy/sklearn loads its BLAS
+    import torch  # noqa: F401
+except ImportError:
+    pass
+
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
@@ -171,7 +176,8 @@ def main():
     if args.build:
         build(args.seed)
     if args.eval:
-        evaluate(set(args.retriever.split()), args.k)
+        names = {"flat", "nav"} if args.retriever == "both" else {args.retriever}
+        evaluate(names, args.k)
     if not args.build and not args.eval:
         ap.print_help()
 

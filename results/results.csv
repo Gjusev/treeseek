@@ -1,0 +1,161 @@
+query_id,retriever,topic,top1_topic,recall@1,recall@5,hit@5,vectors_compared,query
+0,flat,alt.atheism,alt.atheism,1.0,1.0,1.0,3000,Death Penalty (was Re: Political Athei
+1,flat,alt.atheism,rec.sport.baseball,0.0,0.0,0.0,3000,Where are they now?
+2,flat,alt.atheism,alt.atheism,1.0,0.8,1.0,3000,Amusing atheists and anarchists
+3,flat,alt.atheism,alt.atheism,1.0,0.4,1.0,3000,Age of Reason Was: Who has read Rushdie's
+4,flat,comp.graphics,rec.autos,0.0,0.2,1.0,3000,"Cross, Sobel & Roberts Filters ?"
+5,flat,comp.graphics,comp.graphics,1.0,0.8,1.0,3000,JPEG image compression: Frequently Asked Questions
+6,flat,comp.graphics,comp.graphics,1.0,0.8,1.0,3000,Alpha Kubota Graphic vs. SGI
+7,flat,comp.graphics,sci.electronics,0.0,0.0,0.0,3000,2nd RFD for Open Telematic Group for RealTime Multimedia Online apps
+8,flat,comp.os.ms-windows.misc,comp.windows.x,0.0,0.2,1.0,3000,Windows NT und X-Windows?
+9,flat,comp.os.ms-windows.misc,comp.os.ms-windows.misc,1.0,0.2,1.0,3000,Looking for text search engine(s)
+10,flat,comp.os.ms-windows.misc,comp.os.ms-windows.misc,1.0,0.6,1.0,3000,Replacement for Program Manager and File Manager?
+11,flat,comp.os.ms-windows.misc,comp.windows.x,0.0,0.2,1.0,3000,Challenge to Microsoft supporters.
+12,flat,comp.sys.ibm.pc.hardware,comp.sys.ibm.pc.hardware,1.0,0.6,1.0,3000,Gateway 4DX-33V - too high a price?
+13,flat,comp.sys.ibm.pc.hardware,comp.sys.ibm.pc.hardware,1.0,0.6,1.0,3000,Any comments on Gateway's Nomad
+14,flat,comp.sys.ibm.pc.hardware,comp.sys.ibm.pc.hardware,1.0,1.0,1.0,3000,Gateway 2000 & booting fr
+15,flat,comp.sys.ibm.pc.hardware,comp.sys.ibm.pc.hardware,1.0,0.4,1.0,3000,Seagate HD jumper schematics
+16,flat,comp.sys.mac.hardware,comp.sys.mac.hardware,1.0,0.4,1.0,3000,Selling of PowerBook 100s
+17,flat,comp.sys.mac.hardware,comp.sys.mac.hardware,1.0,0.6,1.0,3000,WHICH POWERBOOK TO BUY??
+18,flat,comp.sys.mac.hardware,comp.sys.mac.hardware,1.0,0.4,1.0,3000,New Duo Dock info.
+19,flat,comp.sys.mac.hardware,comp.sys.mac.hardware,1.0,0.6,1.0,3000,Mac Plus is constantly rebooting!
+20,flat,comp.windows.x,comp.graphics,0.0,0.4,1.0,3000,Did Microsoft buy Xhibition??
+21,flat,comp.windows.x,comp.windows.x,1.0,0.8,1.0,3000,Looking for X windows on a PC
+22,flat,comp.windows.x,comp.windows.x,1.0,0.8,1.0,3000,ANNOUNCE: Xm++/CommonInteract UI Development Sys
+23,flat,comp.windows.x,comp.windows.x,1.0,1.0,1.0,3000,Imake-TeX: looking for beta testers
+24,flat,misc.forsale,misc.forsale,1.0,1.0,1.0,3000,Electronic Music Software - WinSong for Windows - like NEW $70
+25,flat,misc.forsale,misc.forsale,1.0,0.8,1.0,3000,"Items for sale , less....!!"
+26,flat,misc.forsale,rec.autos,0.0,0.6,1.0,3000,DATSUN car for sale
+27,flat,misc.forsale,comp.sys.mac.hardware,0.0,0.2,1.0,3000,Mac Software For Sale
+28,flat,rec.autos,sci.electronics,0.0,0.2,1.0,3000,Best Radar Detector - VALENTINE-1?
+29,flat,rec.autos,rec.autos,1.0,1.0,1.0,3000,Changing brake fluid..is it necessary..
+30,flat,rec.autos,rec.autos,1.0,0.4,1.0,3000,Dealer cheated me with wrong odometer reading. Need help!
+31,flat,rec.autos,rec.autos,1.0,0.4,1.0,3000,WHAT car is this!?
+32,flat,rec.motorcycles,rec.motorcycles,1.0,0.8,1.0,3000,Test ride on a GTS1000
+33,flat,rec.motorcycles,rec.motorcycles,1.0,0.8,1.0,3000,Need advice for riding with someone on pillion
+34,flat,rec.motorcycles,rec.autos,0.0,0.0,0.0,3000,Bonding with a Caged Cop?
+35,flat,rec.motorcycles,talk.politics.mideast,0.0,0.0,0.0,3000,Zeno's Countersteering Paradox Unveiled!!!
+36,flat,rec.sport.baseball,rec.sport.baseball,1.0,1.0,1.0,3000,Bases loaded walk gives Reds win in 12
+37,flat,rec.sport.baseball,rec.sport.baseball,1.0,1.0,1.0,3000,Jays' Darrin Jackson is a nightmare!
+38,flat,rec.sport.baseball,comp.sys.ibm.pc.hardware,0.0,0.0,0.0,3000,How to speed up games (marginally realistic)
+39,flat,rec.sport.baseball,rec.sport.hockey,0.0,0.0,0.0,3000,Professional Sports on FM Radio
+40,flat,rec.sport.hockey,talk.religion.misc,0.0,0.0,0.0,3000,German audience is lunatic??
+41,flat,rec.sport.hockey,rec.sport.hockey,1.0,1.0,1.0,3000,SHARKS REVIEW Part 7: the Trades
+42,flat,rec.sport.hockey,rec.sport.hockey,1.0,1.0,1.0,3000,ESPN cares less about hockey
+43,flat,rec.sport.hockey,rec.sport.hockey,1.0,1.0,1.0,3000,"BUFFALO 4, Boston 0: Defense!!"
+44,flat,sci.crypt,sci.crypt,1.0,0.8,1.0,3000,Suggestions for escrow agencies (was: Re: More technical details)
+45,flat,sci.crypt,sci.crypt,1.0,1.0,1.0,3000,Crypto papers on the net.
+46,flat,sci.crypt,comp.windows.x,0.0,0.0,0.0,3000,"I have seen the lobby, and it is us"
+47,flat,sci.crypt,sci.crypt,1.0,1.0,1.0,3000,Clipper considered harmful [Restated and amplified]
+48,flat,sci.electronics,sci.electronics,1.0,0.2,1.0,3000,How to the disks copy protected.
+49,flat,sci.electronics,comp.os.ms-windows.misc,0.0,0.2,1.0,3000,Self-destructing copy protection on VHS tape?
+50,flat,sci.electronics,sci.electronics,1.0,0.8,1.0,3000,Long distance IR detection
+51,flat,sci.electronics,sci.crypt,0.0,0.2,1.0,3000,How universal are phones these days?
+52,flat,sci.med,sci.med,1.0,0.8,1.0,3000,HELP for Kidney Stones ..............
+53,flat,sci.med,sci.med,1.0,1.0,1.0,3000,Chromium as dietary suppliment for weight loss
+54,flat,sci.med,sci.med,1.0,1.0,1.0,3000,INFO: Colonics and Purification?
+55,flat,sci.med,sci.med,1.0,0.8,1.0,3000,"Candida(yeast) Bloom, Fact or Fiction"
+56,flat,sci.space,sci.med,0.0,0.0,0.0,3000,Another SF Irritation RELIEVED! Doctor Who vindicated.
+57,flat,sci.space,talk.politics.mideast,0.0,0.0,0.0,3000,France spied on by the U.S.
+58,flat,sci.space,rec.sport.baseball,0.0,0.2,1.0,3000,"""The Universe of MOTION"" (book review)"
+59,flat,sci.space,sci.space,1.0,1.0,1.0,3000,HST Servicing Mission Scheduled for 11 Days
+60,flat,soc.religion.christian,alt.atheism,0.0,0.2,1.0,3000,The Bible available in every language (was Re: SATANIC TOUNGES)
+61,flat,soc.religion.christian,soc.religion.christian,1.0,0.8,1.0,3000,Homosexuality issues in Christianity
+62,flat,soc.religion.christian,sci.med,0.0,0.0,0.0,3000,Dreams and out of body incidents
+63,flat,soc.religion.christian,talk.religion.misc,0.0,0.4,1.0,3000,"Mary, ""blessed among women"""
+64,flat,talk.politics.guns,talk.politics.guns,1.0,1.0,1.0,3000,"Waco ""Inside Story"" (AP) (Was Re: ATF BURNS....)"
+65,flat,talk.politics.guns,talk.politics.guns,1.0,0.6,1.0,3000,ATF BURNS DIVIDIAN RANCH! NO SURVIVORS!!!
+66,flat,talk.politics.guns,sci.crypt,0.0,0.0,0.0,3000,CLINTON JOINS LIST OF GENOCIDAL SOCIALIST LEADERS
+67,flat,talk.politics.guns,talk.politics.guns,1.0,0.8,1.0,3000,What to do if you shoot somebody
+68,flat,talk.politics.mideast,alt.atheism,0.0,0.4,1.0,3000,Jewish and Muslim relations in Bosnia.
+69,flat,talk.politics.mideast,alt.atheism,0.0,0.0,0.0,3000,Egypt cuts phone lines with Independent Muslim states
+70,flat,talk.politics.mideast,talk.politics.mideast,1.0,1.0,1.0,3000,Israel: An Apartheid state.
+71,flat,talk.politics.mideast,alt.atheism,0.0,0.6,1.0,3000,Europe vs. Muslim Bosnians
+72,flat,talk.politics.misc,talk.politics.misc,1.0,0.4,1.0,3000,"Bill Targets Pension Funds for "" Liberation """
+73,flat,talk.politics.misc,talk.politics.guns,0.0,0.2,1.0,3000,Welcome to Police State USA
+74,flat,talk.politics.misc,sci.space,0.0,0.0,0.0,3000,The earth also pollutes......
+75,flat,talk.politics.misc,talk.politics.misc,1.0,0.8,1.0,3000,New Study Out On Gay Percentage
+76,flat,talk.religion.misc,soc.religion.christian,0.0,0.4,1.0,3000,New Religion Forming -- Sign Up
+77,flat,talk.religion.misc,talk.politics.misc,0.0,0.0,0.0,3000,A Message for you Mr. President: How do you know what happened?
+78,flat,talk.religion.misc,talk.religion.misc,1.0,0.4,1.0,3000,[rw] Is Robert Weiss the only orthodox Christian?
+79,flat,talk.religion.misc,talk.religion.misc,1.0,0.4,1.0,3000,"After 2000 years, can we say that Christian Morality is"
+0,nav,alt.atheism,alt.atheism,1.0,1.0,1.0,82,Death Penalty (was Re: Political Athei
+1,nav,alt.atheism,rec.sport.baseball,0.0,0.0,0.0,58,Where are they now?
+2,nav,alt.atheism,alt.atheism,1.0,0.8,1.0,82,Amusing atheists and anarchists
+3,nav,alt.atheism,sci.med,0.0,0.0,0.0,82,Age of Reason Was: Who has read Rushdie's
+4,nav,comp.graphics,comp.graphics,1.0,0.4,1.0,58,"Cross, Sobel & Roberts Filters ?"
+5,nav,comp.graphics,comp.graphics,1.0,0.4,1.0,75,JPEG image compression: Frequently Asked Questions
+6,nav,comp.graphics,comp.graphics,1.0,0.2,1.0,72,Alpha Kubota Graphic vs. SGI
+7,nav,comp.graphics,misc.forsale,0.0,0.0,0.0,91,2nd RFD for Open Telematic Group for RealTime Multimedia Online apps
+8,nav,comp.os.ms-windows.misc,comp.os.ms-windows.misc,1.0,0.2,1.0,63,Windows NT und X-Windows?
+9,nav,comp.os.ms-windows.misc,comp.windows.x,0.0,0.0,0.0,79,Looking for text search engine(s)
+10,nav,comp.os.ms-windows.misc,comp.os.ms-windows.misc,1.0,1.0,1.0,60,Replacement for Program Manager and File Manager?
+11,nav,comp.os.ms-windows.misc,comp.windows.x,0.0,0.8,1.0,60,Challenge to Microsoft supporters.
+12,nav,comp.sys.ibm.pc.hardware,comp.sys.ibm.pc.hardware,1.0,0.6,1.0,72,Gateway 4DX-33V - too high a price?
+13,nav,comp.sys.ibm.pc.hardware,comp.sys.ibm.pc.hardware,1.0,0.8,1.0,65,Any comments on Gateway's Nomad
+14,nav,comp.sys.ibm.pc.hardware,comp.sys.ibm.pc.hardware,1.0,0.8,1.0,67,Gateway 2000 & booting fr
+15,nav,comp.sys.ibm.pc.hardware,comp.sys.ibm.pc.hardware,1.0,0.4,1.0,67,Seagate HD jumper schematics
+16,nav,comp.sys.mac.hardware,comp.sys.mac.hardware,1.0,0.6,1.0,89,Selling of PowerBook 100s
+17,nav,comp.sys.mac.hardware,comp.sys.mac.hardware,1.0,0.6,1.0,89,WHICH POWERBOOK TO BUY??
+18,nav,comp.sys.mac.hardware,comp.sys.ibm.pc.hardware,0.0,0.4,1.0,91,New Duo Dock info.
+19,nav,comp.sys.mac.hardware,comp.sys.mac.hardware,1.0,0.6,1.0,68,Mac Plus is constantly rebooting!
+20,nav,comp.windows.x,comp.windows.x,1.0,1.0,1.0,82,Did Microsoft buy Xhibition??
+21,nav,comp.windows.x,comp.windows.x,1.0,1.0,1.0,82,Looking for X windows on a PC
+22,nav,comp.windows.x,comp.windows.x,1.0,1.0,1.0,82,ANNOUNCE: Xm++/CommonInteract UI Development Sys
+23,nav,comp.windows.x,comp.graphics,0.0,0.2,1.0,79,Imake-TeX: looking for beta testers
+24,nav,misc.forsale,misc.forsale,1.0,0.8,1.0,89,Electronic Music Software - WinSong for Windows - like NEW $70
+25,nav,misc.forsale,misc.forsale,1.0,1.0,1.0,82,"Items for sale , less....!!"
+26,nav,misc.forsale,rec.autos,0.0,0.6,1.0,74,DATSUN car for sale
+27,nav,misc.forsale,comp.sys.mac.hardware,0.0,0.2,1.0,89,Mac Software For Sale
+28,nav,rec.autos,misc.forsale,0.0,0.0,0.0,82,Best Radar Detector - VALENTINE-1?
+29,nav,rec.autos,rec.autos,1.0,0.2,1.0,68,Changing brake fluid..is it necessary..
+30,nav,rec.autos,rec.autos,1.0,0.6,1.0,73,Dealer cheated me with wrong odometer reading. Need help!
+31,nav,rec.autos,rec.autos,1.0,0.6,1.0,74,WHAT car is this!?
+32,nav,rec.motorcycles,rec.motorcycles,1.0,1.0,1.0,68,Test ride on a GTS1000
+33,nav,rec.motorcycles,rec.motorcycles,1.0,1.0,1.0,68,Need advice for riding with someone on pillion
+34,nav,rec.motorcycles,talk.politics.guns,0.0,0.0,0.0,67,Bonding with a Caged Cop?
+35,nav,rec.motorcycles,soc.religion.christian,0.0,0.0,0.0,50,Zeno's Countersteering Paradox Unveiled!!!
+36,nav,rec.sport.baseball,rec.sport.baseball,1.0,1.0,1.0,84,Bases loaded walk gives Reds win in 12
+37,nav,rec.sport.baseball,rec.sport.baseball,1.0,1.0,1.0,84,Jays' Darrin Jackson is a nightmare!
+38,nav,rec.sport.baseball,sci.electronics,0.0,0.0,0.0,51,How to speed up games (marginally realistic)
+39,nav,rec.sport.baseball,rec.sport.hockey,0.0,0.6,1.0,80,Professional Sports on FM Radio
+40,nav,rec.sport.hockey,talk.politics.mideast,0.0,0.0,0.0,61,German audience is lunatic??
+41,nav,rec.sport.hockey,rec.sport.hockey,1.0,1.0,1.0,64,SHARKS REVIEW Part 7: the Trades
+42,nav,rec.sport.hockey,rec.sport.hockey,1.0,1.0,1.0,78,ESPN cares less about hockey
+43,nav,rec.sport.hockey,rec.sport.hockey,1.0,1.0,1.0,52,"BUFFALO 4, Boston 0: Defense!!"
+44,nav,sci.crypt,sci.crypt,1.0,1.0,1.0,88,Suggestions for escrow agencies (was: Re: More technical details)
+45,nav,sci.crypt,sci.crypt,1.0,1.0,1.0,88,Crypto papers on the net.
+46,nav,sci.crypt,sci.crypt,1.0,0.2,1.0,58,"I have seen the lobby, and it is us"
+47,nav,sci.crypt,sci.crypt,1.0,1.0,1.0,88,Clipper considered harmful [Restated and amplified]
+48,nav,sci.electronics,comp.sys.ibm.pc.hardware,0.0,0.0,0.0,67,How to the disks copy protected.
+49,nav,sci.electronics,sci.crypt,0.0,0.0,0.0,88,Self-destructing copy protection on VHS tape?
+50,nav,sci.electronics,sci.electronics,1.0,0.4,1.0,58,Long distance IR detection
+51,nav,sci.electronics,sci.crypt,0.0,0.0,0.0,88,How universal are phones these days?
+52,nav,sci.med,sci.med,1.0,1.0,1.0,71,HELP for Kidney Stones ..............
+53,nav,sci.med,sci.med,1.0,1.0,1.0,71,Chromium as dietary suppliment for weight loss
+54,nav,sci.med,sci.med,1.0,1.0,1.0,71,INFO: Colonics and Purification?
+55,nav,sci.med,rec.sport.baseball,0.0,0.0,0.0,84,"Candida(yeast) Bloom, Fact or Fiction"
+56,nav,sci.space,sci.med,0.0,0.0,0.0,62,Another SF Irritation RELIEVED! Doctor Who vindicated.
+57,nav,sci.space,talk.politics.mideast,0.0,0.0,0.0,88,France spied on by the U.S.
+58,nav,sci.space,sci.space,1.0,0.4,1.0,64,"""The Universe of MOTION"" (book review)"
+59,nav,sci.space,talk.politics.misc,0.0,0.0,0.0,58,HST Servicing Mission Scheduled for 11 Days
+60,nav,soc.religion.christian,alt.atheism,0.0,0.2,1.0,86,The Bible available in every language (was Re: SATANIC TOUNGES)
+61,nav,soc.religion.christian,soc.religion.christian,1.0,0.8,1.0,103,Homosexuality issues in Christianity
+62,nav,soc.religion.christian,sci.med,0.0,0.0,0.0,78,Dreams and out of body incidents
+63,nav,soc.religion.christian,soc.religion.christian,1.0,0.6,1.0,66,"Mary, ""blessed among women"""
+64,nav,talk.politics.guns,talk.politics.guns,1.0,1.0,1.0,88,"Waco ""Inside Story"" (AP) (Was Re: ATF BURNS....)"
+65,nav,talk.politics.guns,talk.politics.guns,1.0,0.6,1.0,88,ATF BURNS DIVIDIAN RANCH! NO SURVIVORS!!!
+66,nav,talk.politics.guns,talk.politics.misc,0.0,0.0,0.0,61,CLINTON JOINS LIST OF GENOCIDAL SOCIALIST LEADERS
+67,nav,talk.politics.guns,talk.politics.guns,1.0,0.8,1.0,67,What to do if you shoot somebody
+68,nav,talk.politics.mideast,talk.politics.mideast,1.0,1.0,1.0,71,Jewish and Muslim relations in Bosnia.
+69,nav,talk.politics.mideast,talk.politics.mideast,1.0,0.8,1.0,62,Egypt cuts phone lines with Independent Muslim states
+70,nav,talk.politics.mideast,talk.politics.mideast,1.0,1.0,1.0,71,Israel: An Apartheid state.
+71,nav,talk.politics.mideast,talk.politics.mideast,1.0,1.0,1.0,62,Europe vs. Muslim Bosnians
+72,nav,talk.politics.misc,talk.politics.guns,0.0,0.2,1.0,75,"Bill Targets Pension Funds for "" Liberation """
+73,nav,talk.politics.misc,talk.politics.misc,1.0,0.2,1.0,75,Welcome to Police State USA
+74,nav,talk.politics.misc,sci.med,0.0,0.0,0.0,82,The earth also pollutes......
+75,nav,talk.politics.misc,talk.politics.misc,1.0,0.8,1.0,56,New Study Out On Gay Percentage
+76,nav,talk.religion.misc,talk.religion.misc,1.0,0.4,1.0,82,New Religion Forming -- Sign Up
+77,nav,talk.religion.misc,talk.politics.misc,0.0,0.0,0.0,82,A Message for you Mr. President: How do you know what happened?
+78,nav,talk.religion.misc,talk.religion.misc,1.0,0.4,1.0,66,[rw] Is Robert Weiss the only orthodox Christian?
+79,nav,talk.religion.misc,talk.religion.misc,1.0,0.6,1.0,82,"After 2000 years, can we say that Christian Morality is"

@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "encoder": "minilm",
+    "encoder_label": "sentence-transformers/all-MiniLM-L6-v2",
+    "n_passages": 3000,
+    "n_queries": 80,
+    "n_l1_clusters": 20,
+    "n_l2_clusters": 61,
+    "subtree_size_mean": 49.18032786885246,
+    "tree_params": {
+      "n_top": 20,
+      "leaf_max": 60,
+      "seed": 13
+    },
+    "build_seconds": 66.4
+  },
+  "k": 5,
+  "summaries": [
+    {
+      "retriever": "flat",
+      "n_queries": 80,
+      "recall@1": 0.6125,
+      "recall@5": 0.5175000000000001,
+      "hit@5": 0.8125,
+      "vectors_compared_mean": 3000.0
+    },
+    {
+      "retriever": "nav",
+      "n_queries": 80,
+      "recall@1": 0.65,
+      "recall@5": 0.5225000000000001,
+      "hit@5": 0.75,
+      "vectors_compared_mean": 74.1
+    }
+  ],
+  "early_pruning_cases": [
+    {
+      "query": "Age of Reason Was: Who has read Rushdie's",
+      "topic": "alt.atheism",
+      "flat_top5_topics": [
+        "alt.atheism",
+        "sci.med",
+        "rec.sport.baseball",
+        "alt.atheism",
+        "sci.med"
+      ],
+      "nav_top5_topics": [
+        "sci.med",
+        "rec.sport.baseball",
+        "sci.med",
+        "talk.politics.misc",
+        "talk.religion.misc"
+      ],
+      "nav_path": {
+        "l1": 11,
+        "l2": 35,
+        "subtree_size": 59
+      }
+    },
+    {
+      "query": "Looking for text search engine(s)",
+      "topic": "comp.os.ms-windows.misc",
+      "flat_top5_topics": [
+        "comp.os.ms-windows.misc",
+        "sci.crypt",
+        "comp.windows.x",
+        "sci.crypt",
+        "sci.med"
+      ],
+      "nav_top5_topics": [
+        "comp.windows.x",
+        "comp.graphics",
+        "comp.sys.mac.hardware",
+        "sci.crypt",
+        "comp.graphics"
+      ],
+      "nav_path": {
+        "l1": 1,
+        "l2": 5,
+        "subtree_size": 56
+      }
+    },
+    {
+      "query": "Best Radar Detector - VALENTINE-1?",
+      "topic": "rec.autos",
+      "flat_top5_topics": [
+        "sci.electronics",
+        "rec.autos",
+        "sci.electronics",
+        "sci.electronics",
+        "sci.electronics"
+      ],
+      "nav_top5_topics": [
+        "misc.forsale",
+        "misc.forsale",
+        "sci.electronics",
+        "sci.electronics",
+        "sci.electronics"
+      ],
+      "nav_path": {
+        "l1": 10,
+        "l2": 31,
+        "subtree_size": 59
+      }
+    },
+    {
+      "query": "How to the disks copy protected.",
+      "topic": "sci.electronics",
+      "flat_top5_topics": [
+        "sci.electronics",
+        "comp.os.ms-windows.misc",
+        "sci.crypt",
+        "comp.sys.ibm.pc.hardware",
+        "comp.sys.ibm.pc.hardware"
+      ],
+      "nav_top5_topics": [
+        "comp.sys.ibm.pc.hardware",
+        "comp.sys.ibm.pc.hardware",
+        "comp.sys.ibm.pc.hardware",
+        "comp.sys.ibm.pc.hardware",
+        "comp.sys.ibm.pc.hardware"
+      ],
+      "nav_path": {
+        "l1": 12,
+        "l2": 37,
+        "subtree_size": 45
+      }
+    },
+    {
+      "query": "Self-destructing copy protection on VHS tape?",
+      "topic": "sci.electronics",
+      "flat_top5_topics": [
+        "comp.os.ms-windows.misc",
+        "sci.electronics",
+        "sci.crypt",
+        "misc.forsale",
+        "misc.forsale"
+      ],
+      "nav_top5_topics": [
+        "sci.crypt",
+        "sci.crypt",
+        "sci.crypt",
+        "sci.crypt",
+        "sci.crypt"
+      ],
+      "nav_path": {
+        "l1": 3,
+        "l2": 9,
+        "subtree_size": 66
+      }
+    },
+    {
+      "query": "How universal are phones these days?",
+      "topic": "sci.electronics",
+      "flat_top5_topics": [
+        "sci.crypt",
+        "misc.forsale",
+        "sci.crypt",
+        "sci.crypt",
+        "sci.electronics"
+      ],
+      "nav_top5_topics": [
+        "sci.crypt",
+        "sci.crypt",
+        "sci.crypt",
+        "sci.crypt",
+        "sci.crypt"
+      ],
+      "nav_path": {
+        "l1": 3,
+        "l2": 9,
+        "subtree_size": 66
+      }
+    },
+    {
+      "query": "Candida(yeast) Bloom, Fact or Fiction",
+      "topic": "sci.med",
+      "flat_top5_topics": [
+        "sci.med",
+        "sci.med",
+        "sci.med",
+        "sci.med",
+        "sci.space"
+      ],
+      "nav_top5_topics": [
+        "rec.sport.baseball",
+        "rec.sport.baseball",
+        "rec.sport.baseball",
+        "rec.sport.baseball",
+        "rec.sport.baseball"
+      ],
+      "nav_path": {
+        "l1": 9,
+        "l2": 28,
+        "subtree_size": 61
+      }
+    },
+    {
+      "query": "HST Servicing Mission Scheduled for 11 Days",
+      "topic": "sci.space",
+      "flat_top5_topics": [
+        "sci.space",
+        "sci.space",
+        "sci.space",
+        "sci.space",
+        "sci.space"
+      ],
+      "nav_top5_topics": [
+        "talk.politics.misc",
+        "talk.politics.misc",
+        "comp.os.ms-windows.misc",
+        "misc.forsale",
+        "rec.sport.hockey"
+      ],
+      "nav_path": {
+        "l1": 7,
+        "l2": 23,
+        "subtree_size": 35
+      }
+    }
+  ],
+  "n_early_pruning_cases": 8
+}
