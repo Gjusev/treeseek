@@ -1,4 +1,4 @@
-"""nav-rag entry point.
+"""treeseek entry point.
 
 Usage:
   python run.py --build

@@ -1,4 +1,4 @@
-# SPEC: nav-rag
+# SPEC: treeseek
 
 You are developing this project autonomously. Read this spec fully, make sensible decisions without asking questions, and record every non-obvious choice in DECISIONS.md. Do not modify anything outside this directory.
 
