@@ -7,7 +7,9 @@
 ![tests](https://img.shields.io/badge/tests-6%20passing-2ea44f)
 ![license MIT](https://img.shields.io/badge/license-MIT-blue)
 
-![treeseek demo](assets/treeseek.gif)
+<a href="assets/treeseek.mp4"><img src="assets/treeseek.gif" alt="treeseek in 12 seconds: 3000 vectors scored by flat retrieval, 74 by walking the tree" width="100%"></a>
+
+<sub>12 s, no sound. Click for the MP4.</sub>
 
 treeseek is a measured comparison of hierarchical navigation retrieval against flat dense retrieval. The query descends a two-level k-means tree and only scores the passages in the branch it picks. It costs 40x fewer comparisons, and the price is visible in the numbers: a branch that isn't taken is never revisited.
 
@@ -16,24 +18,15 @@ treeseek is a measured comparison of hierarchical navigation retrieval against f
 | flat | 0.613 | 0.518 | **0.812** | 3000 |
 | **treeseek (nav)** | **0.650** | **0.523** | 0.750 | **74** |
 
+![Flat vs treeseek: Recall@1, Recall@5 and Hit@5, plus vectors compared per query](assets/treeseek-results.png)
+
 One run on CPU. Full numbers, per-query analysis and build cost are in [RESULTS.md](RESULTS.md).
 
 *Formerly `nav-rag`.*
 
 ## How it works
 
-```
-query embedding
-      |
-      v
-20 top cluster centroids ------------------> argmax: top cluster 11
-      |                                        (19 clusters never touched)
-      v
-subcluster centroids of cluster 11 ---------> argmax: subcluster 35
-      |                                        (~55 other subclusters never touched)
-      v
-about 50 passage vectors of subcluster 35 --> top-k results
-```
+![A query descends from 20 cluster centroids to about 3 subcluster centroids to about 50 passages](assets/treeseek-descent.png)
 
 k-means groups the embeddings into a two-level tree: root, 20 top clusters, 61 subclusters, then passages (mean subtree size 49). The tree is unsupervised and never sees newsgroup labels. `flat` scores all 3000 passage vectors. `nav` scores the 20 top centroids, descends into the best one, scores that cluster's subcluster centroids, descends again, and returns top-k from that subtree only.
 
@@ -79,17 +72,18 @@ treeseek is based on the navigation idea in "DecisionRAG: Retriever-Free Retriev
 
 ## Repository layout
 
-```
-run.py             CLI: --build, --eval, --retriever flat|nav|both
-src/corpus.py      20 Newsgroups passages and held-out subject queries
-src/embeddings.py  MiniLM encoder with LSA fallback
-src/tree.py        two-level k-means tree, centroid persistence
-src/retrieval.py   flat and nav retrievers, one interface
-src/eval.py        metrics: Recall@1, Recall@5, Hit@5
-data/              built artifacts (corpus, queries, embeddings, tree, meta)
-results/           results.csv, summary.json
-tests/             offline unit tests on synthetic vectors
-```
+| Path | What it holds |
+| --- | --- |
+| `run.py` | CLI: `--build`, `--eval`, `--retriever flat\|nav\|both` |
+| `src/corpus.py` | 20 Newsgroups passages and held-out subject queries |
+| `src/embeddings.py` | MiniLM encoder with LSA fallback |
+| `src/tree.py` | two-level k-means tree, centroid persistence |
+| `src/retrieval.py` | flat and nav retrievers, one interface |
+| `src/eval.py` | metrics: Recall@1, Recall@5, Hit@5 |
+| `data/` | built artifacts (corpus, queries, embeddings, tree, meta) |
+| `results/` | `results.csv`, `summary.json` |
+| `tests/` | offline unit tests on synthetic vectors |
+| `assets/` | demo video, GIF and diagrams |
 
 ## Citation
 
